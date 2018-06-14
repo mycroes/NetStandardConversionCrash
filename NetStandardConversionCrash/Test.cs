@@ -7,12 +7,12 @@ namespace NetStandardConversionCrash
     {
         public async Task A(params object[] items)
         {
-            SetTo0(items, await B());
+            C(items, await B());
         }
 
         private async Task<int> B() => 0;
 
-        private void SetTo0(in IEnumerable<object> items, in int length)
+        private void C(in IEnumerable<object> items, in int length)
         {
         }
     }
