@@ -5,7 +5,7 @@ namespace NetStandardConversionCrash
 {
     public class Test
     {
-        public async Task A(params object[] items)
+        public async Task A(object[] items)
         {
             C(items, await B());
         }
